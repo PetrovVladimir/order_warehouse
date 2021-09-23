@@ -1,0 +1,3 @@
+CREATE USER db_owner WITH ENCRYPTED PASSWORD 'test';
+
+CREATE DATABASE orders OWNER db_owner;
