@@ -15,7 +15,7 @@ public class PublicOrderServiceExceptionHandler extends ResponseEntityExceptionH
     protected ResponseEntity<String> handleConflict(Exception e) {
 
         return ResponseEntity
-                .status(HttpStatus.SERVICE_UNAVAILABLE)
+                .status(HttpStatus.BAD_REQUEST)
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .body(String.format("{\"message\": \"%s\"}", e.getMessage()));
     }

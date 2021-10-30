@@ -11,7 +11,7 @@ spring:
     password: test
 
 kafka:
-  server: ${KAFKA_SERVER:localhost:9092}
+  server: ${KAFKA_SERVER:localhost:9092}  #d5tbcr-kfc001lk.corp.dev.vtb:9092
   groupId: orders
 
 server:

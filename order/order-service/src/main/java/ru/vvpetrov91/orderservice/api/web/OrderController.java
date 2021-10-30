@@ -17,7 +17,7 @@ public class OrderController {
     private final OrderService orderService;
 
     @Operation(description = "Создать заказ")
-    @PostMapping()
+    @PostMapping
     public CreateOrderResponse createOrder(@RequestBody CreateOrderRequest createOrderRequest)
             throws OrderServiceException {
 
@@ -25,7 +25,7 @@ public class OrderController {
     }
 
     @Operation(description = "Посмотреть созданный заказ")
-    @GetMapping()
+    @GetMapping
     public OrderInstanceResponse getOrderBy(@RequestParam String orderId)
             throws OrderServiceException {
 

@@ -37,7 +37,7 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public KafkaTemplate<String, OrderEvent> discussionKafkaTemplate() {
+    public KafkaTemplate<String, OrderEvent> orderKafkaTemplate() {
         return new KafkaTemplate<>(orderProducerFactory());
     }
 }
